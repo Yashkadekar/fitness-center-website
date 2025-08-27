@@ -83,3 +83,7 @@ Project Link: [https://gymnasium1.netlify.app](https://gymnasium1.netlify.app)
 - [Google Fonts](https://fonts.google.com/)
 - [Unsplash](https://unsplash.com/) for placeholder images
 - [Readme Template](https://github.com/othneildrew/Best-README-Template)
+
+<div align="center" style="margin-top: 2rem; color: #6c757d; font-size: 0.9em;">
+  <p>✨ Generated with the help of AI</p>
+</div>

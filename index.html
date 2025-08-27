@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitZone Gym - Transform Your Body Today</title>
+    <meta name="description" content="Join FitZone Gym for professional personal training, group classes, and state-of-the-art equipment. Transform your body today!">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>FitZone</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#trainers" class="nav-link">Trainers</a>
+                <a href="#schedule" class="nav-link">Schedule</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#workout-generator" class="nav-link">Workouts</a>
+                <a href="#testimonials" class="nav-link">Reviews</a>
+                <a href="#membership" class="nav-link">Membership</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <div class="theme-toggle">
+                    <input type="checkbox" id="theme-switch" class="theme-switch">
+                    <label for="theme-switch" class="theme-label">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                        <span class="toggle-ball"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero parallax-container">
+        <div class="parallax-bg" data-speed="0.5"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Transform Your Body Today</h1>
+            <p class="hero-subtitle">Join thousands who've achieved their fitness goals with our expert trainers and state-of-the-art equipment</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Start Your Journey</button>
+                <button class="btn btn-secondary">Watch Our Story</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive fitness solutions tailored to your goals</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Personal Training</h3>
+                    <p>One-on-one sessions with certified trainers to maximize your results and ensure proper form.</p>
+                    <ul>
+                        <li>Customized workout plans</li>
+                        <li>Nutrition guidance</li>
+                        <li>Progress tracking</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Group Classes</h3>
+                    <p>High-energy group workouts that motivate and challenge you alongside fellow fitness enthusiasts.</p>
+                    <ul>
+                        <li>HIIT & Cardio</li>
+                        <li>Yoga & Pilates</li>
+                        <li>Strength Training</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Wellness Programs</h3>
+                    <p>Holistic approach to health including nutrition counseling and lifestyle coaching.</p>
+                    <ul>
+                        <li>Meal planning</li>
+                        <li>Health assessments</li>
+                        <li>Recovery programs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BMI Calculator Section -->
+    <section id="bmi-calculator" class="bmi-calculator">
+        <div class="container">
+            <div class="section-header">
+                <h2>BMI Calculator</h2>
+                <p>Calculate your Body Mass Index and get personalized fitness recommendations</p>
+            </div>
+            <div class="bmi-content">
+                <div class="bmi-form-container">
+                    <form class="bmi-form" id="bmi-form">
+                        <div class="form-group">
+                            <label for="height">Height</label>
+                            <div class="input-group">
+                                <input type="number" id="height" placeholder="170" required>
+                                <select id="height-unit">
+                                    <option value="cm">cm</option>
+                                    <option value="ft">ft</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="weight">Weight</label>
+                            <div class="input-group">
+                                <input type="number" id="weight" placeholder="70" required>
+                                <select id="weight-unit">
+                                    <option value="kg">kg</option>
+                                    <option value="lbs">lbs</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="number" id="age" placeholder="25" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="gender" value="male" checked>
+                                    <span>Male</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="gender" value="female">
+                                    <span>Female</span>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Calculate BMI</button>
+                    </form>
+                </div>
+                <div class="bmi-result" id="bmi-result">
+                    <div class="bmi-display">
+                        <div class="bmi-value" id="bmi-value">--</div>
+                        <div class="bmi-category" id="bmi-category">Enter your details</div>
+                    </div>
+                    <div class="bmi-chart">
+                        <div class="chart-bar underweight">
+                            <span>Underweight</span>
+                            <span>&lt;18.5</span>
+                        </div>
+                        <div class="chart-bar normal">
+                            <span>Normal</span>
+                            <span>18.5-24.9</span>
+                        </div>
+                        <div class="chart-bar overweight">
+                            <span>Overweight</span>
+                            <span>25-29.9</span>
+                        </div>
+                        <div class="chart-bar obese">
+                            <span>Obese</span>
+                            <span>≥30</span>
+                        </div>
+                    </div>
+                    <div class="bmi-recommendation" id="bmi-recommendation">
+                        <h4>Recommendation</h4>
+                        <p>Calculate your BMI to get personalized fitness recommendations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                        </div>
+                    </div>
+                    <div class="bmi-recommendation" id="bmi-recommendation">
+                        <h4>Recommendation</h4>
+                        <p>Calculate your BMI to get personalized fitness recommendations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section id="trainers" class="trainers">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet Our Expert Trainers</h2>
+                <p>Certified professionals dedicated to helping you achieve your fitness goals</p>
+            </div>
+            <div class="trainers-grid">
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=400&fit=crop&crop=face" alt="Alex Johnson" loading="lazy">
+                        <div class="trainer-overlay">
+                            <div class="social-links">
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Alex Johnson</h3>
+                        <p class="trainer-specialty">Strength & Conditioning</p>
+                        <div class="trainer-stats">
+                            <div class="stat">
+                                <span class="stat-number">8+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Clients Trained</span>
+                            </div>
+                        </div>
+                        <p class="trainer-bio">Certified personal trainer specializing in strength training and muscle building. Helped hundreds achieve their fitness goals.</p>
+                        <button class="btn btn-outline trainer-btn" data-trainer="Alex Johnson">Book Session</button>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=300&h=400&fit=crop&crop=face" alt="Sarah Martinez" loading="lazy">
+                        <div class="trainer-overlay">
+                            <div class="social-links">
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Sarah Martinez</h3>
+                        <p class="trainer-specialty">Yoga & Pilates</p>
+                        <div class="trainer-stats">
+                            <div class="stat">
+                                <span class="stat-number">6+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">300+</span>
+                                <span class="stat-label">Clients Trained</span>
+                            </div>
+                        </div>
+                        <p class="trainer-bio">Certified yoga instructor and wellness coach. Specializes in flexibility, mindfulness, and holistic health approaches.</p>
+                        <button class="btn btn-outline trainer-btn" data-trainer="Sarah Martinez">Book Session</button>
+                    </div>
+                </div>
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <img src="https://images.unsplash.com/photo-1567013127542-490d757e51cd?w=300&h=400&fit=crop&crop=face" alt="Mike Thompson" loading="lazy">
+                        <div class="trainer-overlay">
+                            <div class="social-links">
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Mike Thompson</h3>
+                        <p class="trainer-specialty">HIIT & Cardio</p>
+                        <div class="trainer-stats">
+                            <div class="stat">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">700+</span>
+                                <span class="stat-label">Clients Trained</span>
+                            </div>
+                        </div>
+                        <p class="trainer-bio">High-intensity interval training expert and former athlete. Specializes in fat loss and cardiovascular conditioning.</p>
+                        <button class="btn btn-outline trainer-btn" data-trainer="Mike Thompson">Book Session</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Class Schedule Section -->
+    <section id="schedule" class="schedule parallax-container">
+        <div class="parallax-bg" data-speed="0.3"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2>Class Schedule</h2>
+                <p>Join our energizing group classes throughout the week</p>
+            </div>
+            <div class="schedule-container">
+                <div class="schedule-tabs">
+                    <button class="tab-btn active" data-day="monday">Monday</button>
+                    <button class="tab-btn" data-day="tuesday">Tuesday</button>
+                    <button class="tab-btn" data-day="wednesday">Wednesday</button>
+                    <button class="tab-btn" data-day="thursday">Thursday</button>
+                    <button class="tab-btn" data-day="friday">Friday</button>
+                    <button class="tab-btn" data-day="saturday">Saturday</button>
+                    <button class="tab-btn" data-day="sunday">Sunday</button>
+                </div>
+                <div class="schedule-content">
+                    <div class="day-schedule active" id="monday">
+                        <div class="class-item">
+                            <div class="class-time">6:00 AM</div>
+                            <div class="class-info">
+                                <h4>Morning Yoga</h4>
+                                <p>Sarah Martinez • Studio A • 60 min</p>
+                                <span class="difficulty beginner">Beginner</span>
+                            </div>
+                            <button class="btn btn-sm btn-primary">Book Now</button>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-time">8:00 AM</div>
+                            <div class="class-info">
+                                <h4>HIIT Bootcamp</h4>
+                                <p>Mike Thompson • Main Floor • 45 min</p>
+                                <span class="difficulty advanced">Advanced</span>
+                            </div>
+                            <button class="btn btn-sm btn-primary">Book Now</button>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-time">6:00 PM</div>
+                            <div class="class-info">
+                                <h4>Strength Training</h4>
+                                <p>Alex Johnson • Weight Room • 60 min</p>
+                                <span class="difficulty intermediate">Intermediate</span>
+                            </div>
+                            <button class="btn btn-sm btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="day-schedule" id="tuesday">
+                        <div class="class-item">
+                            <div class="class-time">7:00 AM</div>
+                            <div class="class-info">
+                                <h4>Pilates</h4>
+                                <p>Sarah Martinez • Studio B • 50 min</p>
+                                <span class="difficulty beginner">Beginner</span>
+                            </div>
+                            <button class="btn btn-sm btn-primary">Book Now</button>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-time">12:00 PM</div>
+                            <div class="class-info">
+                                <h4>Lunch Break Cardio</h4>
+                                <p>Mike Thompson • Cardio Zone • 30 min</p>
+                                <span class="difficulty intermediate">Intermediate</span>
+                            </div>
+                            <button class="btn btn-sm btn-primary">Book Now</button>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-time">7:00 PM</div>
+                            <div class="class-info">
+                                <h4>CrossFit</h4>
+                                <p>Alex Johnson • CrossFit Box • 60 min</p>
+                                <span class="difficulty advanced">Advanced</span>
+                            </div>
+                            <button class="btn btn-sm btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Facility</h2>
+                <p>Take a virtual tour of our state-of-the-art fitness facility</p>
+            </div>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="equipment">Equipment</button>
+                <button class="filter-btn" data-filter="classes">Classes</button>
+                <button class="filter-btn" data-filter="facilities">Facilities</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="equipment">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=300&fit=crop" alt="Modern gym equipment" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Modern Equipment</h4>
+                        <p>State-of-the-art fitness machines</p>
+                        <button class="gallery-btn" data-image="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="classes">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Group fitness class" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Group Classes</h4>
+                        <p>Energizing group workouts</p>
+                        <button class="gallery-btn" data-image="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="facilities">
+                    <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=400&h=300&fit=crop" alt="Locker room facilities" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Locker Rooms</h4>
+                        <p>Clean and spacious facilities</p>
+                        <button class="gallery-btn" data-image="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&h=600&fit=crop">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="equipment">
+                    <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&h=300&fit=crop" alt="Free weights area" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Free Weights</h4>
+                        <p>Complete range of dumbbells and barbells</p>
+                        <button class="gallery-btn" data-image="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800&h=600&fit=crop">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="classes">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=300&fit=crop" alt="Yoga studio" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Yoga Studio</h4>
+                        <p>Peaceful space for mind-body workouts</p>
+                        <button class="gallery-btn" data-image="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=300&fit=crop">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="facilities">
+                    <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=400&h=300&fit=crop" alt="Cardio area" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Cardio Zone</h4>
+                        <p>Latest cardio equipment with entertainment</p>
+                        <button class="gallery-btn" data-image="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&h=600&fit=crop">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- Workout Generator Section -->
+    <section id="workout-generator" class="workout-generator">
+        <div class="container">
+            <div class="section-header">
+                <h2>AI Workout Generator</h2>
+                <p>Get personalized workout routines based on your fitness level and goals</p>
+            </div>
+            <div class="generator-content">
+                <div class="generator-form">
+                    <form id="workout-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fitness-level">Fitness Level</label>
+                                <select id="fitness-level" required>
+                                    <option value="">Select Level</option>
+                                    <option value="beginner">Beginner</option>
+                                    <option value="intermediate">Intermediate</option>
+                                    <option value="advanced">Advanced</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="workout-goal">Primary Goal</label>
+                                <select id="workout-goal" required>
+                                    <option value="">Select Goal</option>
+                                    <option value="weight-loss">Weight Loss</option>
+                                    <option value="muscle-gain">Muscle Gain</option>
+                                    <option value="strength">Strength Building</option>
+                                    <option value="endurance">Endurance</option>
+                                    <option value="flexibility">Flexibility</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="workout-duration">Duration (minutes)</label>
+                                <select id="workout-duration" required>
+                                    <option value="">Select Duration</option>
+                                    <option value="15">15 minutes</option>
+                                    <option value="30">30 minutes</option>
+                                    <option value="45">45 minutes</option>
+                                    <option value="60">60 minutes</option>
+                                    <option value="90">90 minutes</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="equipment">Available Equipment</label>
+                                <select id="equipment" required>
+                                    <option value="">Select Equipment</option>
+                                    <option value="none">No Equipment (Bodyweight)</option>
+                                    <option value="basic">Basic (Dumbbells, Resistance Bands)</option>
+                                    <option value="full">Full Gym Equipment</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="target-areas">Target Areas (Optional)</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="target-areas" value="chest">
+                                    <span>Chest</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="target-areas" value="back">
+                                    <span>Back</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="target-areas" value="arms">
+                                    <span>Arms</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="target-areas" value="legs">
+                                    <span>Legs</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="target-areas" value="core">
+                                    <span>Core</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="target-areas" value="cardio">
+                                    <span>Cardio</span>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Generate Workout</button>
+                    </form>
+                </div>
+                <div class="workout-result" id="workout-result">
+                    <div class="result-placeholder">
+                        <i class="fas fa-dumbbell"></i>
+                        <h3>Your Custom Workout</h3>
+                        <p>Fill out the form to generate a personalized workout routine tailored to your goals and fitness level.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- Meal Planner Section -->
+    <section id="meal-planner" class="meal-planner">
+        <div class="container">
+            <div class="section-header">
+                <h2>AI Meal Planner</h2>
+                <p>Get personalized meal plans based on your fitness goals and dietary preferences</p>
+            </div>
+            <div class="meal-planner-content">
+                <div class="meal-form-container">
+                    <form class="meal-form" id="meal-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="meal-goal">Fitness Goal</label>
+                                <select id="meal-goal" required>
+                                    <option value="">Select Goal</option>
+                                    <option value="weight-loss">Weight Loss</option>
+                                    <option value="muscle-gain">Muscle Gain</option>
+                                    <option value="maintenance">Maintenance</option>
+                                    <option value="athletic">Athletic Performance</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="diet-type">Diet Type</label>
+                                <select id="diet-type" required>
+                                    <option value="">Select Diet</option>
+                                    <option value="balanced">Balanced</option>
+                                    <option value="vegetarian">Vegetarian</option>
+                                    <option value="vegan">Vegan</option>
+                                    <option value="keto">Keto</option>
+                                    <option value="paleo">Paleo</option>
+                                    <option value="mediterranean">Mediterranean</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="daily-calories">Daily Calories</label>
+                                <input type="number" id="daily-calories" placeholder="2000" min="1200" max="4000" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="meals-per-day">Meals Per Day</label>
+                                <select id="meals-per-day" required>
+                                    <option value="">Select</option>
+                                    <option value="3">3 Meals</option>
+                                    <option value="4">4 Meals</option>
+                                    <option value="5">5 Meals</option>
+                                    <option value="6">6 Meals</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Food Allergies/Restrictions</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="allergies" value="nuts">
+                                    <span>Nuts</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="allergies" value="dairy">
+                                    <span>Dairy</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="allergies" value="gluten">
+                                    <span>Gluten</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="allergies" value="shellfish">
+                                    <span>Shellfish</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="allergies" value="eggs">
+                                    <span>Eggs</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="allergies" value="soy">
+                                    <span>Soy</span>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Generate Meal Plan</button>
+                    </form>
+                </div>
+                <div class="meal-result" id="meal-result">
+                    <div class="result-placeholder">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Your Personalized Meal Plan</h3>
+                        <p>Fill out the form to generate a customized meal plan tailored to your fitness goals and dietary preferences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workout Timer Section -->
+    <section id="workout-timer" class="workout-timer parallax-container">
+        <div class="parallax-bg" data-speed="0.4"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2>Workout Timer</h2>
+                <p>Professional interval timer for your workouts with customizable settings</p>
+            </div>
+            <div class="timer-container">
+                <div class="timer-display">
+                    <div class="timer-circle">
+                        <svg class="timer-svg" viewBox="0 0 100 100">
+                            <circle class="timer-bg" cx="50" cy="50" r="45"></circle>
+                            <circle class="timer-progress" cx="50" cy="50" r="45" id="timer-progress"></circle>
+                        </svg>
+                        <div class="timer-text">
+                            <div class="timer-time" id="timer-time">00:30</div>
+                            <div class="timer-phase" id="timer-phase">Get Ready</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timer-controls">
+                    <div class="timer-settings">
+                        <div class="setting-group">
+                            <label for="work-time">Work Time (seconds)</label>
+                            <input type="number" id="work-time" value="30" min="5" max="300">
+                        </div>
+                        <div class="setting-group">
+                            <label for="rest-time">Rest Time (seconds)</label>
+                            <input type="number" id="rest-time" value="10" min="5" max="120">
+                        </div>
+                        <div class="setting-group">
+                            <label for="rounds">Rounds</label>
+                            <input type="number" id="rounds" value="8" min="1" max="50">
+                        </div>
+                    </div>
+                    <div class="timer-buttons">
+                        <button class="btn btn-primary" id="start-timer">Start Timer</button>
+                        <button class="btn btn-secondary" id="pause-timer" disabled>Pause</button>
+                        <button class="btn btn-outline" id="reset-timer">Reset</button>
+                    </div>
+                    <div class="timer-stats">
+                        <div class="stat">
+                            <span class="stat-label">Current Round</span>
+                            <span class="stat-value" id="current-round">1</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Total Rounds</span>
+                            <span class="stat-value" id="total-rounds">8</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Total Time</span>
+                            <span class="stat-value" id="total-time">05:20</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fitness Challenges Section -->
+    <section id="challenges" class="challenges">
+        <div class="container">
+            <div class="section-header">
+                <h2>Fitness Challenges</h2>
+                <p>Join our community challenges and compete with other members</p>
+            </div>
+            <div class="challenges-grid">
+                <div class="challenge-card active">
+                    <div class="challenge-badge">Active</div>
+                    <div class="challenge-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>30-Day Cardio Challenge</h3>
+                    <p>Complete 30 minutes of cardio for 30 consecutive days</p>
+                    <div class="challenge-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 60%"></div>
+                        </div>
+                        <span class="progress-text">18/30 days</span>
+                    </div>
+                    <div class="challenge-reward">
+                        <i class="fas fa-gift"></i>
+                        <span>Reward: Free Personal Training Session</span>
+                    </div>
+                    <button class="btn btn-primary">Join Challenge</button>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-badge upcoming">Starting Soon</div>
+                    <div class="challenge-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Strength Building Challenge</h3>
+                    <p>Increase your max lift by 20% in 8 weeks</p>
+                    <div class="challenge-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                        <span class="progress-text">Starts in 3 days</span>
+                    </div>
+                    <div class="challenge-reward">
+                        <i class="fas fa-trophy"></i>
+                        <span>Reward: FitZone Merchandise Pack</span>
+                    </div>
+                    <button class="btn btn-outline">Join Waitlist</button>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-badge completed">Completed</div>
+                    <div class="challenge-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Mindful Movement</h3>
+                    <p>Complete 21 days of yoga and meditation</p>
+                    <div class="challenge-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%"></div>
+                        </div>
+                        <span class="progress-text">Challenge Complete!</span>
+                    </div>
+                    <div class="challenge-reward">
+                        <i class="fas fa-medal"></i>
+                        <span>Reward: Wellness Workshop Access</span>
+                    </div>
+                    <button class="btn btn-secondary" disabled>Completed</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutrition Calculator Section -->
+    <section id="nutrition-calculator" class="nutrition-calculator parallax-container">
+        <div class="parallax-bg" data-speed="0.4"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2>Nutrition Calculator</h2>
+                <p>Calculate your daily caloric needs and macronutrient breakdown</p>
+            </div>
+            <div class="nutrition-content">
+                <div class="nutrition-form">
+                    <form id="nutrition-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="n-age">Age</label>
+                                <input type="number" id="n-age" min="16" max="100" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="n-gender">Gender</label>
+                                <select id="n-gender" required>
+                                    <option value="">Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="n-height">Height (cm)</label>
+                                <input type="number" id="n-height" min="120" max="250" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="n-weight">Weight (kg)</label>
+                                <input type="number" id="n-weight" min="30" max="300" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="activity-level">Activity Level</label>
+                            <select id="activity-level" required>
+                                <option value="">Select Activity Level</option>
+                                <option value="1.2">Sedentary (little/no exercise)</option>
+                                <option value="1.375">Light (light exercise 1-3 days/week)</option>
+                                <option value="1.55">Moderate (moderate exercise 3-5 days/week)</option>
+                                <option value="1.725">Active (hard exercise 6-7 days/week)</option>
+                                <option value="1.9">Very Active (very hard exercise, physical job)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="nutrition-goal">Nutrition Goal</label>
+                            <select id="nutrition-goal" required>
+                                <option value="">Select Goal</option>
+                                <option value="lose">Lose Weight (-500 cal/day)</option>
+                                <option value="maintain">Maintain Weight</option>
+                                <option value="gain">Gain Weight (+500 cal/day)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Calculate Nutrition</button>
+                    </form>
+                </div>
+                <div class="nutrition-result" id="nutrition-result">
+                    <div class="result-placeholder">
+                        <i class="fas fa-apple-alt"></i>
+                        <h3>Your Nutrition Plan</h3>
+                        <p>Enter your details to get personalized daily calorie and macronutrient recommendations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Tour Section -->
+    <section id="virtual-tour" class="virtual-tour">
+        <div class="container">
+            <div class="section-header">
+                <h2>360° Virtual Tour</h2>
+                <p>Explore our facility from the comfort of your home</p>
+            </div>
+            <div class="tour-container">
+                <div class="tour-viewer" id="tour-viewer">
+                    <div class="tour-image">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=400&fit=crop" alt="Gym Main Floor" id="tour-main-image">
+                        <div class="tour-hotspots">
+                            <div class="hotspot" data-tour="cardio" style="top: 30%; left: 20%;">
+                                <div class="hotspot-pulse"></div>
+                                <div class="hotspot-tooltip">Cardio Zone</div>
+                            </div>
+                            <div class="hotspot" data-tour="weights" style="top: 50%; left: 70%;">
+                                <div class="hotspot-pulse"></div>
+                                <div class="hotspot-tooltip">Weight Training Area</div>
+                            </div>
+                            <div class="hotspot" data-tour="studio" style="top: 70%; left: 40%;">
+                                <div class="hotspot-pulse"></div>
+                                <div class="hotspot-tooltip">Group Fitness Studio</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-controls">
+                        <button class="tour-btn active" data-tour="main">Main Floor</button>
+                        <button class="tour-btn" data-tour="cardio">Cardio Zone</button>
+                        <button class="tour-btn" data-tour="weights">Weight Room</button>
+                        <button class="tour-btn" data-tour="studio">Group Studio</button>
+                        <button class="tour-btn" data-tour="locker">Locker Rooms</button>
+                    </div>
+                </div>
+                <div class="tour-info">
+                    <h3 id="tour-title">Main Gym Floor</h3>
+                    <p id="tour-description">Welcome to our spacious main gym floor featuring state-of-the-art equipment and an open, energizing atmosphere perfect for all your fitness needs.</p>
+                    <div class="tour-features" id="tour-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>24/7 Access Available</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Climate Controlled</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Professional Sound System</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials parallax-container">
+        <div class="parallax-bg" data-speed="0.3"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2>Success Stories</h2>
+                <p>Real transformations from real people</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="John Smith" loading="lazy">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"FitZone completely transformed my life. I lost 30 pounds and gained incredible strength. The trainers are amazing!"</p>
+                        <h4>John Smith</h4>
+                        <span>Lost 30 lbs in 4 months</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face" alt="Sarah Johnson" loading="lazy">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The group classes are so motivating! I've made great friends and achieved fitness goals I never thought possible."</p>
+                        <h4>Sarah Johnson</h4>
+                        <span>Member for 2 years</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" alt="Mike Davis" loading="lazy">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Professional trainers, clean facilities, and results that speak for themselves. Best investment I've ever made!"</p>
+                        <h4>Mike Davis</h4>
+                        <span>Gained 15 lbs muscle</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Plans -->
+    <section id="membership" class="membership">
+        <div class="container">
+            <div class="section-header">
+                <h2>Membership Plans</h2>
+                <p>Choose the perfect plan for your fitness journey</p>
+            </div>
+            <div class="membership-grid">
+                <div class="membership-card">
+                    <div class="plan-header">
+                        <h3>Basic</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">29</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Gym access during off-peak hours</li>
+                        <li><i class="fas fa-check"></i> Basic equipment usage</li>
+                        <li><i class="fas fa-check"></i> Locker room access</li>
+                        <li><i class="fas fa-times"></i> Personal training sessions</li>
+                        <li><i class="fas fa-times"></i> Group classes</li>
+                    </ul>
+                    <button class="btn btn-outline">Choose Plan</button>
+                </div>
+                <div class="membership-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h3>Premium</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">59</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 24/7 gym access</li>
+                        <li><i class="fas fa-check"></i> All equipment usage</li>
+                        <li><i class="fas fa-check"></i> Unlimited group classes</li>
+                        <li><i class="fas fa-check"></i> 2 personal training sessions/month</li>
+                        <li><i class="fas fa-check"></i> Nutrition consultation</li>
+                    </ul>
+                    <button class="btn btn-primary">Choose Plan</button>
+                </div>
+                <div class="membership-card">
+                    <div class="plan-header">
+                        <h3>Elite</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">99</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 24/7 premium gym access</li>
+                        <li><i class="fas fa-check"></i> Unlimited group classes</li>
+                        <li><i class="fas fa-check"></i> Weekly personal training</li>
+                        <li><i class="fas fa-check"></i> Meal planning & nutrition</li>
+                        <li><i class="fas fa-check"></i> Recovery & wellness programs</li>
+                    </ul>
+                    <button class="btn btn-outline">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- Weather Widget Section -->
+    <section id="weather-widget" class="weather-widget">
+        <div class="container">
+            <div class="weather-content">
+                <div class="weather-card">
+                    <div class="weather-header">
+                        <h3>Today's Weather</h3>
+                        <p>Perfect day for a workout!</p>
+                    </div>
+                    <div class="weather-info">
+                        <div class="weather-main">
+                            <div class="weather-icon">
+                                <i class="fas fa-sun" id="weather-icon"></i>
+                            </div>
+                            <div class="weather-temp">
+                                <span id="weather-temp">22°C</span>
+                                <span class="weather-desc" id="weather-desc">Sunny</span>
+                            </div>
+                        </div>
+                        <div class="weather-details">
+                            <div class="weather-item">
+                                <i class="fas fa-eye"></i>
+                                <span>Visibility</span>
+                                <span id="weather-visibility">10km</span>
+                            </div>
+                            <div class="weather-item">
+                                <i class="fas fa-tint"></i>
+                                <span>Humidity</span>
+                                <span id="weather-humidity">65%</span>
+                            </div>
+                            <div class="weather-item">
+                                <i class="fas fa-wind"></i>
+                                <span>Wind</span>
+                                <span id="weather-wind">15 km/h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="workout-suggestion">
+                        <h4>Workout Suggestion</h4>
+                        <p id="workout-suggestion">Great weather for outdoor running! Consider our outdoor bootcamp class.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gym Statistics Section -->
+    <section id="gym-stats" class="gym-stats">
+        <div class="container">
+            <div class="section-header">
+                <h2>Live Gym Statistics</h2>
+                <p>Real-time data from our fitness community</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 id="current-members">1,247</h3>
+                        <p>Active Members</p>
+                        <span class="stat-change positive">+23 this month</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 id="workouts-today">89</h3>
+                        <p>Workouts Today</p>
+                        <span class="stat-change positive">+12% vs yesterday</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 id="calories-today">45,230</h3>
+                        <p>Calories Burned Today</p>
+                        <span class="stat-change positive">+8% vs average</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 id="avg-workout">52</h3>
+                        <p>Avg Workout (min)</p>
+                        <span class="stat-change neutral">Same as last week</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 id="peak-hours">6-8 PM</h3>
+                        <p>Peak Hours</p>
+                        <span class="stat-change">Current: Moderate</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 id="achievements-unlocked">156</h3>
+                        <p>Achievements This Week</p>
+                        <span class="stat-change positive">+34 vs last week</span>
+                    </div>
+                </div>
+            </div>
+            <div class="live-activity">
+                <h3>Live Activity Feed</h3>
+                <div class="activity-feed" id="activity-feed">
+                    <div class="activity-item">
+                        <div class="activity-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p><strong>Sarah M.</strong> completed a 45-min HIIT workout</p>
+                            <span class="activity-time">2 minutes ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p><strong>Mike R.</strong> unlocked "Strength Master" achievement</p>
+                            <span class="activity-time">5 minutes ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="activity-content">
+                            <p><strong>Emma L.</strong> joined the Morning Yoga class</p>
+                            <span class="activity-time">8 minutes ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- Social Features Section -->
+    <section id="social-features" class="social-features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Connect & Share</h2>
+                <p>Join our fitness community and share your journey with fellow members</p>
+            </div>
+            <div class="social-content">
+                <div class="social-feed">
+                    <h3>Community Feed</h3>
+                    <div class="feed-post">
+                        <div class="post-header">
+                            <div class="post-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" alt="User">
+                            </div>
+                            <div class="post-info">
+                                <h4>John Smith</h4>
+                                <span class="post-time">2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>Just completed my first 5K run! 🏃‍♂️ Thanks to the amazing trainers at FitZone for helping me reach this milestone!</p>
+                            <div class="post-image">
+                                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=200&fit=crop" alt="Workout">
+                            </div>
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i> 24</button>
+                            <button class="action-btn"><i class="fas fa-comment"></i> 8</button>
+                            <button class="action-btn"><i class="fas fa-share"></i> Share</button>
+                        </div>
+                    </div>
+                    <div class="feed-post">
+                        <div class="post-header">
+                            <div class="post-avatar">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=50&h=50&fit=crop&crop=face" alt="User">
+                            </div>
+                            <div class="post-info">
+                                <h4>Sarah Johnson</h4>
+                                <span class="post-time">5 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>New personal record on deadlifts today! 💪 120kg x 5 reps. The strength training program is really paying off!</p>
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i> 31</button>
+                            <button class="action-btn"><i class="fas fa-comment"></i> 12</button>
+                            <button class="action-btn"><i class="fas fa-share"></i> Share</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-sidebar">
+                    <div class="leaderboard">
+                        <h3>Weekly Leaderboard</h3>
+                        <div class="leaderboard-item">
+                            <span class="rank">1</span>
+                            <div class="user-info">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face" alt="User">
+                                <span>Mike Davis</span>
+                            </div>
+                            <span class="points">2,450 pts</span>
+                        </div>
+                        <div class="leaderboard-item">
+                            <span class="rank">2</span>
+                            <div class="user-info">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face" alt="User">
+                                <span>John Smith</span>
+                            </div>
+                            <span class="points">2,180 pts</span>
+                        </div>
+                        <div class="leaderboard-item">
+                            <span class="rank">3</span>
+                            <div class="user-info">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=40&h=40&fit=crop&crop=face" alt="User">
+                                <span>Sarah Johnson</span>
+                            </div>
+                            <span class="points">1,950 pts</span>
+                        </div>
+                    </div>
+                    <div class="workout-buddies">
+                        <h3>Find Workout Buddies</h3>
+                        <div class="buddy-card">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face" alt="User">
+                            <div class="buddy-info">
+                                <h4>Emma Wilson</h4>
+                                <p>Looking for yoga partner</p>
+                                <button class="btn btn-sm btn-primary">Connect</button>
+                            </div>
+                        </div>
+                        <div class="buddy-card">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=60&h=60&fit=crop&crop=face" alt="User">
+                            <div class="buddy-info">
+                                <h4>Alex Chen</h4>
+                                <p>Strength training buddy</p>
+                                <button class="btn btn-sm btn-primary">Connect</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gym Locator Section -->
+    <section id="gym-locator" class="gym-locator parallax-container">
+        <div class="parallax-bg" data-speed="0.4"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2>Find FitZone Locations</h2>
+                <p>Discover FitZone gyms near you with our interactive location finder</p>
+            </div>
+            <div class="locator-content">
+                <div class="location-search">
+                    <div class="search-form">
+                        <input type="text" id="location-search" placeholder="Enter your city or zip code">
+                        <button class="btn btn-primary" id="search-locations">Find Gyms</button>
+                    </div>
+                    <div class="location-filters">
+                        <label class="filter-checkbox">
+                            <input type="checkbox" id="filter-24h" checked>
+                            <span>24/7 Access</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" id="filter-pool">
+                            <span>Swimming Pool</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" id="filter-classes">
+                            <span>Group Classes</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" id="filter-parking">
+                            <span>Free Parking</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="locations-results">
+                    <div class="location-card">
+                        <div class="location-image">
+                            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=300&h=200&fit=crop" alt="FitZone Downtown">
+                        </div>
+                        <div class="location-info">
+                            <h3>FitZone Downtown</h3>
+                            <p class="location-address">123 Main Street, Downtown, City 12345</p>
+                            <div class="location-features">
+                                <span class="feature-tag">24/7</span>
+                                <span class="feature-tag">Pool</span>
+                                <span class="feature-tag">Classes</span>
+                                <span class="feature-tag">Parking</span>
+                            </div>
+                            <div class="location-hours">
+                                <i class="fas fa-clock"></i>
+                                <span>Open 24/7</span>
+                            </div>
+                            <div class="location-distance">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>2.3 miles away</span>
+                            </div>
+                            <div class="location-actions">
+                                <button class="btn btn-primary">Get Directions</button>
+                                <button class="btn btn-outline">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-image">
+                            <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=300&h=200&fit=crop" alt="FitZone Westside">
+                        </div>
+                        <div class="location-info">
+                            <h3>FitZone Westside</h3>
+                            <p class="location-address">456 Oak Avenue, Westside, City 12346</p>
+                            <div class="location-features">
+                                <span class="feature-tag">Classes</span>
+                                <span class="feature-tag">Parking</span>
+                            </div>
+                            <div class="location-hours">
+                                <i class="fas fa-clock"></i>
+                                <span>5:00 AM - 11:00 PM</span>
+                            </div>
+                            <div class="location-distance">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>4.7 miles away</span>
+                            </div>
+                            <div class="location-actions">
+                                <button class="btn btn-primary">Get Directions</button>
+                                <button class="btn btn-outline">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-image">
+                            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=300&h=200&fit=crop" alt="FitZone Northside">
+                        </div>
+                        <div class="location-info">
+                            <h3>FitZone Northside</h3>
+                            <p class="location-address">789 Pine Road, Northside, City 12347</p>
+                            <div class="location-features">
+                                <span class="feature-tag">24/7</span>
+                                <span class="feature-tag">Classes</span>
+                            </div>
+                            <div class="location-hours">
+                                <i class="fas fa-clock"></i>
+                                <span>Open 24/7</span>
+                            </div>
+                            <div class="location-distance">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>6.1 miles away</span>
+                            </div>
+                            <div class="location-actions">
+                                <button class="btn btn-primary">Get Directions</button>
+                                <button class="btn btn-outline">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact parallax-container">
+        <div class="parallax-bg" data-speed="0.4"></div>
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get Started Today</h2>
+                    <p>Ready to transform your life? Contact us now and begin your fitness journey with FitZone.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>123 Fitness Street, Gym City, GC 12345</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>(555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@fitzonegym.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter-signup">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for fitness tips, class schedules, and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FitZone</h3>
+                    <p>Transform your body, transform your life. Join the FitZone family today.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#membership">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Personal Training</a></li>
+                        <li><a href="#">Group Classes</a></li>
+                        <li><a href="#">Nutrition Counseling</a></li>
+                        <li><a href="#">Wellness Programs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Fitness Street, Gym City</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@fitzonegym.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sun: 5AM - 11PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FitZone Gym. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Chat Widget -->
+    <div class="chat-widget" id="chat-widget">
+        <div class="chat-toggle" id="chat-toggle">
+            <i class="fas fa-comments"></i>
+            <span class="chat-notification" id="chat-notification">1</span>
+        </div>
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <h4>Live Support</h4>
+                <button class="chat-close" id="chat-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot-message">
+                    <div class="message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Hi! I'm here to help you with any questions about our gym services. How can I assist you today?</p>
+                        <span class="message-time">Just now</span>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button id="chat-send">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Modal -->
+    <div class="gallery-modal" id="gallery-modal">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="modal-image" src="" alt="Gallery Image">
+            <div class="modal-nav">
+                <button class="modal-prev" id="modal-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="modal-next" id="modal-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="booking-modal" id="booking-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="booking-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3>Book a Session</h3>
+            <form class="booking-form" id="booking-form">
+                <div class="form-group">
+                    <label for="booking-name">Full Name</label>
+                    <input type="text" id="booking-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-email">Email</label>
+                    <input type="email" id="booking-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-phone">Phone</label>
+                    <input type="tel" id="booking-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-service">Service</label>
+                    <select id="booking-service" required>
+                        <option value="">Select a service</option>
+                        <option value="personal-training">Personal Training</option>
+                        <option value="group-class">Group Class</option>
+                        <option value="nutrition-consultation">Nutrition Consultation</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="booking-date">Preferred Date</label>
+                    <input type="date" id="booking-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-time">Preferred Time</label>
+                    <select id="booking-time" required>
+                        <option value="">Select time</option>
+                        <option value="06:00">6:00 AM</option>
+                        <option value="07:00">7:00 AM</option>
+                        <option value="08:00">8:00 AM</option>
+                        <option value="09:00">9:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="17:00">5:00 PM</option>
+                        <option value="18:00">6:00 PM</option>
+                        <option value="19:00">7:00 PM</option>
+                        <option value="20:00">8:00 PM</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="booking-message">Additional Message</label>
+                    <textarea id="booking-message" rows="3" placeholder="Any specific requirements or goals?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Book Session</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -75,7 +75,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Yash Kadekar - yashkadekar22@gmail.com
 
-Project Link: [https://gymnasium1.netlify.app](https://gymnasium1.netlify.app)
+Project Link: [https://fitness-center-website-three.vercel.app](https://fitness-center-website-three.vercel.app)
 
 ## 🙏 Acknowledgments
 
